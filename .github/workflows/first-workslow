@@ -25,4 +25,5 @@ jobs:
           ls -l
           npm -v
           df -k
+          ls
 
