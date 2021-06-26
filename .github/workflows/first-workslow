@@ -1,0 +1,26 @@
+name: Test workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+  workflow_dispatch:
+
+
+jobs:
+ 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello my first workdlow"
+      - name: some tests
+        run: |
+          uname -a
+          ls -l
+          npm -v
+     
+
