@@ -22,5 +22,5 @@ jobs:
           uname -a
           ls -l
           npm -v
-     
+          df -k
 
